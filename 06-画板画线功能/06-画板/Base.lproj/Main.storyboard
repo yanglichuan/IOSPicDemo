@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HMViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8K-QV-Jy3">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8Ap-Za-Act"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="清屏" id="OW2-NK-a1Q"/>
+                                    <barButtonItem title="撤销" id="Arc-fo-PFb"/>
+                                    <barButtonItem title="橡皮擦" id="Rhd-SE-pKi"/>
+                                    <barButtonItem title="照片" id="c9n-NV-qXh"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YUk-PH-q5V"/>
+                                    <barButtonItem title="保存" id="rTA-rG-lM7"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhm-Bk-n1C">
+                                <rect key="frame" x="0.0" y="488" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SrQ-Ee-KXl">
+                                        <rect key="frame" x="18" y="0.0" width="284" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pn8-br-gYS"/>
+                                        </constraints>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oac-vJ-ZkN">
+                                        <rect key="frame" x="120" y="30" width="80" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY5-UP-Gcc">
+                                        <rect key="frame" x="20" y="30" width="80" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Yoh-sV-yDh"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQT-hd-b1E">
+                                        <rect key="frame" x="220" y="30" width="80" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.34225391049999998" green="1" blue="0.9988487049" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94523186999999997" green="0.57083796840000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Oac-vJ-ZkN" firstAttribute="width" secondItem="vY5-UP-Gcc" secondAttribute="width" id="99c-lG-0de"/>
+                                    <constraint firstAttribute="bottom" secondItem="vY5-UP-Gcc" secondAttribute="bottom" constant="20" id="A64-ey-ZaL"/>
+                                    <constraint firstItem="Oac-vJ-ZkN" firstAttribute="height" secondItem="vY5-UP-Gcc" secondAttribute="height" id="BDB-GD-yP7"/>
+                                    <constraint firstItem="Oac-vJ-ZkN" firstAttribute="centerY" secondItem="vY5-UP-Gcc" secondAttribute="centerY" id="LRP-Pz-xc7"/>
+                                    <constraint firstItem="SrQ-Ee-KXl" firstAttribute="leading" secondItem="Zhm-Bk-n1C" secondAttribute="leading" constant="20" id="R4Z-hY-u0i"/>
+                                    <constraint firstItem="vY5-UP-Gcc" firstAttribute="leading" secondItem="Zhm-Bk-n1C" secondAttribute="leading" constant="20" id="RA2-Sx-dKh"/>
+                                    <constraint firstItem="HQT-hd-b1E" firstAttribute="leading" secondItem="Oac-vJ-ZkN" secondAttribute="trailing" constant="20" id="YeM-Ro-IRW"/>
+                                    <constraint firstAttribute="height" constant="80" id="ewe-S7-zQ2"/>
+                                    <constraint firstItem="Oac-vJ-ZkN" firstAttribute="height" secondItem="HQT-hd-b1E" secondAttribute="height" id="iWO-m4-oah"/>
+                                    <constraint firstItem="Oac-vJ-ZkN" firstAttribute="leading" secondItem="vY5-UP-Gcc" secondAttribute="trailing" constant="20" id="kUD-Cr-v8l"/>
+                                    <constraint firstItem="SrQ-Ee-KXl" firstAttribute="top" secondItem="Zhm-Bk-n1C" secondAttribute="top" id="ngJ-eq-uVV"/>
+                                    <constraint firstItem="Oac-vJ-ZkN" firstAttribute="centerY" secondItem="HQT-hd-b1E" secondAttribute="centerY" id="ofX-9v-eh8"/>
+                                    <constraint firstItem="Oac-vJ-ZkN" firstAttribute="width" secondItem="HQT-hd-b1E" secondAttribute="width" id="qqH-bt-qGl"/>
+                                    <constraint firstAttribute="trailing" secondItem="SrQ-Ee-KXl" secondAttribute="trailing" constant="20" id="vRd-ie-yJF"/>
+                                    <constraint firstAttribute="trailing" secondItem="HQT-hd-b1E" secondAttribute="trailing" constant="20" id="zBb-by-GaK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIM-QP-XhK" customClass="HMPaintView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eIM-QP-XhK" firstAttribute="top" secondItem="a8K-QV-Jy3" secondAttribute="bottom" id="2kI-G8-V0B"/>
+                            <constraint firstItem="a8K-QV-Jy3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Db8-yt-wH6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Zhm-Bk-n1C" secondAttribute="bottom" id="LAj-NB-iN9"/>
+                            <constraint firstAttribute="trailing" secondItem="eIM-QP-XhK" secondAttribute="trailing" id="S3H-wC-Mo1"/>
+                            <constraint firstAttribute="trailing" secondItem="Zhm-Bk-n1C" secondAttribute="trailing" id="Uq0-gc-gMC"/>
+                            <constraint firstItem="Zhm-Bk-n1C" firstAttribute="top" secondItem="eIM-QP-XhK" secondAttribute="bottom" id="bFk-3Q-7KN"/>
+                            <constraint firstItem="Zhm-Bk-n1C" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ncp-BO-nlm"/>
+                            <constraint firstItem="a8K-QV-Jy3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qnJ-9l-1XH"/>
+                            <constraint firstItem="eIM-QP-XhK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ryz-J5-kOp"/>
+                            <constraint firstAttribute="trailing" secondItem="a8K-QV-Jy3" secondAttribute="trailing" id="u3n-RM-cXE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
